@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta charset="utf-8">
+		<meta name="description" content="Employer Metric Page">
+		<meta name="keywords" content="HTML,CSS,JavaScript">
+		<meta name="author" content="Andrew Barras, Arun Karki, Asim Oli, Damian O'Boyle, Rajib Rijal">
+		
+		<title>Employer Metrics Page</title>
+		<link rel="icon" href="icon.png">
+		<link rel="stylesheet" type="fonts" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" >
+		<link rel="stylesheet" type="text/css" href="metric.css">
+	</head>
+
+	<body>
+		<img class="logo" src="ondecare.png" alt="OndeCare Logo"><!--Placeholder for NavBar which will be integrated from customers current website-->
+		
+		<h1>Your Benefits Program </h1>
+		<h2>Concierge Family Care Plan</h2><!--Program Title, will need to be pulled from backend-->
+
+		<!--Replace with JS to pull backend data-->
+		<table cellpadding="15" cellspacing=10 width="70%">
+			<tr><td>
+				<label>Sponsored Employees: </label>
+					<p>N/A</p><!--Replace with Element to Display Number pulled from backend-->
+			</td><td>
+				<label>Gift Cards Sent: </label>
+					<p>N/A</p><!--Replace with  Element to Display Number pulled from backend-->
+			</td></tr>
+			<tr><td>
+				<label>Subsidised Employees: </label>
+					<p>N/A</p><!--Replace with  Element to Display Number pulled from backend-->
+			</td><td>
+				<label>Popup Daycare Events: </label>
+					<p>N/A</p><!--Replace with  Element to Display Number pulled from backend-->
+			</td></tr>
+			<tr><td>
+				<label>Active Employees: </label>
+					<p>N/A</p><!--Replace with  Element to Display Number pulled from backend-->
+			</td><td align="right">
+				<button id="manage" onclick="window.location.href='management.html'">Manage Your Program</button>
+			</td></tr>	
+		</table>
+
+		<h1>Recognition and Popup Daycare Options</h1>
+			<button id="gift" onclick="window.location.href='#'">Buy/Send Gift Cards</button><!--Will link to Gift Card Page-->
+			<button id="popup" onclick="window.location.href='#'">Schedule Popup Daycare Event</button><!--Will link to Popup Daycare Page-->
+		<br/>
+		<h2 id="report">Real Time Reporting</h2>
+		<button id="request" onclick="window.location.href='mailto:ondecare@email.com?subject=Corporate%20Report%20Request'">Request a Report</button><!--Dummy Email Address needs to be substituted with official-->
+			<div class="soon">Coming Soon</div><!--To be implemented in Project 2, will pull relevant data from the backend to display to the employer-->
+	</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Corporate Landing Page">
+		<meta name="keywords" content="HTML,CSS,JavaScript">
+		<meta name="author" content="Andrew Barras, Arun Karki, Asim Oli, Damian O'Boyle, Rajib Rijal">
+		
+		<title>Corporate Landing Page</title>
+		<link rel="icon" href="icon.png">
+		<link rel="stylesheet" type="fonts" href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap">
+		<link rel="stylesheet" type="text/css" href="corporate.css">
+    	<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+
+	<body>
+		<img class="logo" src="ondecare.png" alt="OndeCare Logo"><!--Placeholder for NavBar which will be integrated from customers current website-->
+
+		<h1>Corporate Benefits</h1>
+
+		<img src="features.png">
+
+		<div class="roi">
+			<h2>Return On Investment (ROI)</h2>
+			<p>Research shows that employers can expect a $3-4 return for $1 invested in back-up care due to less absenteeism, better work product and a reducation in employee turnover.</p>
+		</div>
+
+		<div class="why">
+			<h2>Why OndeCare?</h2>
+			<p>OndeCare's Concierge Family Care Program is an employee benefit that can contribute to employee attraction and retention stratagies, address the cost of productivity loss due to unplanned absences (estimated as 6.7% of payroll), and prepare deadline driven businesses for the key challenges of tomorrow's workfore:</p>
+			<ul>
+				<li>The momentum of the work-life movement</li>
+				<li>The increase of Millenialls in the workforce</li>
+				<li>The aging Baby Boomer Population</li>
+			</ul>
+			<p><b>Work Life</b> integration has been underway for over a decade but today more than 50% of working mothers and fathers say juggling work and family life is difficult. Both consider leaving the workplace beacause of it. Suprisingly, men are increasingly more likely to change jobs (67%) than women (57%).</p>
+			<p>By 2025, 75% of the global workforce will be made up of Generation-Y <b>(Millenials)</b>, of whom 62% say on-site or subsidised childcare is important as opposed to 47% of the Boomer Generations</p>
+			<p>Nearly half of adults in their 40s and 50s have <b>a parent older than 65</b> and have children of their own or are supporting a grown child. Finally, 15% of middle-aged adults are providing financial support to both an aging parent and a child. This number will only continue to rise</p>
+		</div>
+
+		<h2>Employer Sign Up</h2>
+
+		<div class="choose">
+			<button  id="signbtn" onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+			<button  id="logbtn" onclick="document.getElementById('id02').style.display='block'">Login</button>
+		</div>
+
+		<div id="id01" class="modal">
+			<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+			<form class="modal-content" action="/action_page.php">
+		    	<div class="container">
+			    	<h1>Sign Up</h1>
+			    	<section>For OndeCare's Coroporate Benefits Program</section>
+			      		<hr>
+				    <label for="company"><b>Company Name</b></label>
+				    	<input type="text" name="company" placeholder="Company Name" required>
+			        <label for="executive"><b>Authorising Executive</b></label>
+			    		<input type="text" name="executive" placeholder="Executive Name" required>
+			        <label for="email"><b>Email</b></label>
+			    		<input type="text" name="email" placeholder="Enter Email" required>
+			        <label for="psw"><b>Password</b></label>
+			        	<input type="password" name="psw" placeholder="Enter Password" required>
+			        <label for="psw-repeat"><b>Confirm Password</b></label>
+			        	<input type="password" name="psw-confirm" placeholder="Confirm Password" required>
+			      
+			  		<section>By signing up you agree to our <a href="#">Terms & Conditions</a></section>
+
+			    	<div class="clearfix">
+			        	<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			        	<button type="submit" class="signupbtn" onclick="window.location.href='metric.htm'">Sign Up</button>
+			      	</div>
+	    		</div>
+  			</form>
+		</div>
+
+		<div id="id02" class="modal">
+  			<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+  			<form class="modal-content" action="/action_page.php">
+    			<div class="container">
+      				<h1>Login</h1>
+      					<hr>
+      				<label for="usernm"><b>Username</b></label>
+    					<input type="text" name="usernm" placeholder="Username" required>
+					<label for="psw"><b>Password</b></label>
+    					<input type="password" name="psw" placeholder="Password" required>
+ 
+      				<div class="clearfix">
+        				<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        				<button type="submit" class="signupbtn" onclick="window.location.href='metric.htm'">Log in</button>
+    				</div>
+    			</div>
+  			</form>
+		</div>
+
+		<script>
+			// Get the modal
+			var modal = document.getElementById('id01');
+			var modal = document.getElementById('id02');
+
+			// When the user clicks anywhere outside of the modal, close it
+			window.onclick = function(event) {
+				if (event.target == modal) {
+			    	modal.style.display = "none";
+				}
+			}
+		</script>    
+	</body>
+</html>
